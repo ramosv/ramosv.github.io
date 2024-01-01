@@ -28,4 +28,34 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    const experience = document.querySelectorAll('.experience-entry');
+    experience.forEach(entry => {
+        const moreInfo = entry.querySelector('.more-info');
+        const details = entry.querySelector('.details');
+
+        moreInfo.addEventListener('click', () => {
+            if (details.style.display === "none" || !details.style.display) {
+                details.style.display = "block";
+                moreInfo.textContent = "Less info";
+            } else {
+                details.style.display = "none";
+                moreInfo.textContent = "Click here to learn more";
+            }
+        });
+    });
+    const projects = document.querySelectorAll('.projects');
+    projects.forEach(project => {
+        const moreInfo = project.querySelector('.more-info');
+        const details = project.querySelector('.details');
+
+        moreInfo.addEventListener('click', () => {
+            if (details.style.display == "none" || !details.style.display) {
+                details.style.display = "block";
+                moreInfo.textContent = "Less info";
+            } else {
+                details.style.display = "none";
+                moreInfo.textContent = "Click here to learn more"
+            }
+        })
+    })
 });
