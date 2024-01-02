@@ -120,11 +120,24 @@ main {
     border-radius: 5px;
 }
 
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .projects {
     background-color: #f9f9f9;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+}
+
+.projects h3 {
+    align-items: center;
 }
 
 .school {
@@ -173,6 +186,11 @@ a:hover {
     color: #009578
 }
 
+
+
+
+
+
 /*Interactive Design for mobile*/
 @media (max-width: 600px) {
     .nav-container {
@@ -186,5 +204,9 @@ a:hover {
 
     .nav-list li {
         padding: 10px 0;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
     }
 }

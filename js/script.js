@@ -59,3 +59,29 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 });
+//header
+document.getElementById('header-placeholder').innerHTML = `
+<header>
+        <div class="nav-container">
+            <a href="index.html" id="brand-name">Vicente Ramos</a>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+`;
+
+//footer
+document.getElementById('footer-placeholder').innerHTML = `
+<footer>
+    <p>Contact me</p>
+        <ul class="nav-list">
+            <li><a href="https://www.linkedin.com/in/ramosv/">LinkedIn</a></li>
+            <li><a href="https://github.com/ramosv">Github</li>
+    </ul>
+</footer>
+`;
+
