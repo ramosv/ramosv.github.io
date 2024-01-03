@@ -1,5 +1,3 @@
-//Change background color whne clicking on main content
-
 document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.querySelector('main');
     mainContent.addEventListener('click', () => {
