@@ -66,11 +66,13 @@ document.getElementById('header-placeholder').innerHTML = `
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
+                    <li><a href="stickynotes.html">Sticky Notes</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 `;
+
 
 //footer
 document.getElementById('footer-placeholder').innerHTML = `
