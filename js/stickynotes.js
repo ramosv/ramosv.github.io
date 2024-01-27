@@ -290,6 +290,7 @@ document.getElementById('header-placeholder').innerHTML = `
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="stickynotes.html">Sticky Notes</a></li>
+                    <li><a href="Cyber-News">Cyber-News</a></li>
                 </ul>
             </nav>
         </div>

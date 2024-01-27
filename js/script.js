@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const mainContent = document.querySelector('main');
-    mainContent.addEventListener('click', () => {
-        mainContent.style.backgroundColor = 'lightblue';
-    });
     const introText = document.getElementById('intro-text');
     introText.addEventListener('click', () => {
         introText.textContent = "With a strong foundation in information systems, I am currently diving deeper into computer science through my master's studies, focusing on transitioning into a software engineering role. My experience spans from IT to hands-on software development, showcased by my participation in hackathons and personal projects. Fluent in both English and Spanish, I bring to the table effective communication skills, bridging technical nuances with clarity. My ability to translate technical details, combined with my growing software engineering expertise, positions me uniquely at the intersection of technology and practical solutions.";
@@ -15,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const details = school.querySelector('.details');
 
         moreInfo.addEventListener('click', () => {
-            console.log("Clicked more-info");
+            //console.log("Clicked more-info");
 
             if (details.style.display === "none" || !details.style.display) {
                 details.style.display = "block";
@@ -67,6 +63,7 @@ document.getElementById('header-placeholder').innerHTML = `
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="stickynotes.html">Sticky Notes</a></li>
+                    <li><a href="Cyber-News">Cyber-News</a></li>
                 </ul>
             </nav>
         </div>
