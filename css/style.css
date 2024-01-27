@@ -13,6 +13,10 @@ body {
     padding: 20px;
 }
 
+#main-container {
+    background-color: lightblue;
+}
+
 /*Header styling*/
 header {
     background: #333;
@@ -200,11 +204,6 @@ footer {
 a:hover {
     color: #009578
 }
-
-
-
-
-
 
 /*Interactive Design for mobile*/
 @media (max-width: 600px) {
