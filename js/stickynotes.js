@@ -302,8 +302,8 @@ document.getElementById('footer-placeholder').innerHTML = `
 <footer>
     <p>Contact me</p>
         <ul class="nav-list">
-            <li><a href="https://www.linkedin.com/in/ramosv/">LinkedIn</a></li>
-            <li><a href="https://github.com/ramosv">Github</li>
+        <li><a href="https://www.linkedin.com/in/ramosv/"><img class="socials" src="images/linkedin.png">LinkedIn</a></li>  
+        <li><a href="https://github.com/ramosv"><img class="socials" src="images/github.png">Github</li>
     </ul>
 </footer>
 `;

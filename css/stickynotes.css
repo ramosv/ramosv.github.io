@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+.socials {
+    height: 24px;
+    width: 24px;
+}
+
 html,
 body {
     background-color: #fff;

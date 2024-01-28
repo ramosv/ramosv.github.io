@@ -6,6 +6,11 @@ p {
     padding: 0;
 }
 
+.socials {
+    height: 24px;
+    width: 24px;
+}
+
 /*Body styling*/
 body {
     font-family: Arial, Helvetica, sans-serif;
