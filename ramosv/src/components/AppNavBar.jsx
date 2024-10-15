@@ -41,11 +41,11 @@ export default function AppNavbar({ setCurrentPage }) {
         boxShadow: 0,
         bgcolor: "transparent",
         backgroundImage: "none",
-        mt: 3,
+        mt: 2,
       }}
     >
-      <Container>
-        <StyledToolbar variant="dense">
+      <Container maxWidth="lg">
+        <StyledToolbar variant="dense" disableGutters>
           <Box
             sx={{ flexGrow: 1, display: "flex", alignItems: "center", px: 0 }}
           >

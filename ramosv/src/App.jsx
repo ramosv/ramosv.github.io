@@ -2,46 +2,49 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import AppNavbar from "./components/AppNavbar";
 import AppTheme from "../theme/AppTheme.jsx";
-import Container from "@mui/material/Container";
+
+import Stack from "@mui/material/Stack";
 import Copyright from "./components/Copyright.jsx";
 import Hero from "./components/Hero.jsx";
-import Divider from "@mui/material/Divider";
 // import ExperiencePage from "./components/ExperiencePage.jsx";
 //{currentPage === "experience" && <ExperiencePage />}
 import HomePage from "./components/HomePage.jsx";
+import { Box } from "@mui/material";
 
 export default function Dashboard(props) {
   const [currentPage, setCurrentPage] = React.useState("home");
 
   return (
     <AppTheme {...props}>
-      <Container
-        component="main"
-        sx={(theme) => ({
-          display: "flex",
-          flexDirection: "column",
-          gap: 2,
-          alignItems: "center",
-          justifyContent: "center",
-          width: "100%",
-          backgroundImage:
-            "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 90%), transparent)",
-          ...theme.applyStyles("dark", {
-            backgroundImage:
-              "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)",
-          }),
-        })}
-      >
-        <CssBaseline enableColorScheme />
+      <CssBaseline enableColorScheme />
+      <Box sx={{ display: "flex" }}>
         <AppNavbar setCurrentPage={setCurrentPage} />
-        <Divider />
-        <Hero />
-        <Divider />
-        {currentPage === "home" && <HomePage />}
-
-        <Divider />
-      </Container>
-      <Copyright sx={{ my: 4 }} />
+        {/* Main content */}
+        <Box
+          id="main"
+          sx={(theme) => ({
+            flexGrow: 1,
+            backgroundImage:
+              theme.palette.mode === "cd "
+                ? "radial-gradient(ellipse 80% 50% at 50% -20%, hsla(210, 100%, 16%, 0.6), transparent)"
+                : "radial-gradient(ellipse 80% 50% at 50% -20%, hsla(210, 100%, 90%, 0.6), transparent)",
+          })}
+        >
+          <Stack
+            spacing={2}
+            sx={{
+              alignItems: "center",
+              mx: 3,
+              pb: 10,
+              mt: { xs: 8, md: 0 },
+            }}
+          >
+            <Hero />
+            {currentPage === "home" && <HomePage />}
+            <Copyright sx={{ my: 4 }} />
+          </Stack>
+        </Box>
+      </Box>
     </AppTheme>
   );
 }
