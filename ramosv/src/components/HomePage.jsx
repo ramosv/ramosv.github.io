@@ -77,8 +77,8 @@ const items = [
       "Collaborated with another engineer to meet tight project deadlines.",
     textDark3:
       "Collaborated with another engineer to meet tight project deadlines.",
-    textLight4: "",
-    textDark4: "",
+    textLight4: "Followed Agile methodologies to ensure project success.",
+    textDark4: "Followed Agile methodologies to ensure project success.",
   },
 ];
 
@@ -207,173 +207,175 @@ export default function HomePage() {
   const selectedFeature = items[selectedItemIndex];
 
   return (
-    <Grid container spacing={2} columns={12}>
-      <Grid size={{ xs: 12, md: 6 }}>
-        <SyledCard sx={{ height: "100%" }}>
-          <SyledCardContent>
-            <Typography
-              component="h2"
-              variant="h4"
-              gutterBottom
-              sx={{ color: "text.primary" }}
-            >
-              About
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ color: "text.secondary", mb: { xs: 2, sm: 4 } }}
-            >
-              I'm a graduate student at the University of Colorado Denver,
-              blending research and software development to drive advancement in
-              computer science. My journey integrates both cutting-edge research
-              and practical application, focusing on creating effective
-              solutions.
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ color: "text.secondary", mb: { xs: 2, sm: 4 } }}
-            >
-              As a Graduate Researcher, I conduct research in bioinformatics and
-              healthcare, focusing on high-dimensional biomedical data. I
-              leverage machine learning, deep learning, and graph neural
-              networks to solve complex problems. My current work involves
-              investigating multimodal representations by integrating datasets
-              like multi-omics and medical imaging, and developing open-source
-              tools to enhance biomedical data analysis for downstream
-              applications.
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ color: "text.secondary", mb: { xs: 2, sm: 4 } }}
-            >
-              {" "}
-              Additionally, I work as a Software Developer at Semantic Arts,
-              leveraging semantic technologies to develop impactful software
-              solutions. My combination of software engineering skills and
-              research experience helps me turn advanced concepts into
-              practical, real-world applications..
-            </Typography>
-          </SyledCardContent>
-        </SyledCard>
-      </Grid>
-      <Grid size={{ xs: 12, md: 3 }}>
-        <SyledCard sx={{ height: "100%" }}>
-          {items.map(({ icon, title, description }, index) => (
-            <Box
-              key={index}
-              component={Button}
-              onClick={() => handleItemClick(index)}
-              sx={[
-                (theme) => ({
-                  p: 2,
-                  height: "100%",
-                  width: "100%",
-                  "&:hover": {
-                    backgroundColor: theme.palette.action.hover,
-                  },
-                }),
-                selectedItemIndex === index && {
-                  backgroundColor: "action.selected",
-                },
-              ]}
-            >
+    <Box sx={{ maxWidth: "lg" }}>
+      <Grid container spacing={2} columns={12}>
+        <Grid size={{ xs: 12, md: 6 }}>
+          <SyledCard sx={{ height: "100%" }}>
+            <SyledCardContent>
+              <Typography
+                component="h2"
+                variant="h4"
+                gutterBottom
+                sx={{ color: "text.primary" }}
+              >
+                About
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{ color: "text.secondary", mb: { xs: 2, sm: 4 } }}
+              >
+                I'm a graduate student at the University of Colorado Denver,
+                blending research and software development to drive advancement
+                in computer science. My journey integrates both cutting-edge
+                research and practical application, focusing on creating
+                effective solutions.
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{ color: "text.secondary", mb: { xs: 2, sm: 4 } }}
+              >
+                As a Graduate Researcher, I conduct research in bioinformatics
+                and healthcare, focusing on high-dimensional biomedical data. I
+                leverage machine learning, deep learning, and graph neural
+                networks to solve complex problems. My current work involves
+                investigating multimodal representations by integrating datasets
+                like multi-omics and medical imaging, and developing open-source
+                tools to enhance biomedical data analysis for downstream
+                applications.
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{ color: "text.secondary", mb: { xs: 2, sm: 4 } }}
+              >
+                {" "}
+                Additionally, I work as a Software Developer at Semantic Arts,
+                leveraging semantic technologies to develop impactful software
+                solutions. My combination of software engineering skills and
+                research experience helps me turn advanced concepts into
+                practical, real-world applications..
+              </Typography>
+            </SyledCardContent>
+          </SyledCard>
+        </Grid>
+        <Grid size={{ xs: 12, md: 3 }}>
+          <SyledCard sx={{ height: "100%" }}>
+            {items.map(({ icon, title, description }, index) => (
               <Box
+                key={index}
+                component={Button}
+                onClick={() => handleItemClick(index)}
                 sx={[
-                  {
+                  (theme) => ({
+                    p: 2,
+                    height: "100%",
                     width: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "left",
-                    gap: 1,
-                    textAlign: "left",
-                    color: "text.secondary",
-                  },
+                    "&:hover": {
+                      backgroundColor: theme.palette.action.hover,
+                    },
+                  }),
                   selectedItemIndex === index && {
-                    color: "text.primary",
+                    backgroundColor: "action.selected",
                   },
                 ]}
               >
-                {icon}
+                <Box
+                  sx={[
+                    {
+                      width: "100%",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "left",
+                      gap: 1,
+                      textAlign: "left",
+                      color: "text.secondary",
+                    },
+                    selectedItemIndex === index && {
+                      color: "text.primary",
+                    },
+                  ]}
+                >
+                  {icon}
 
-                <Typography variant="h6">{title}</Typography>
-                <Typography variant="body2">{description}</Typography>
+                  <Typography variant="h6">{title}</Typography>
+                  <Typography variant="body2">{description}</Typography>
+                </Box>
               </Box>
-            </Box>
-          ))}
-        </SyledCard>
-        <MobileLayout
-          selectedItemIndex={selectedItemIndex}
-          handleItemClick={handleItemClick}
-          selectedFeature={selectedFeature}
-        />
-      </Grid>
-      <Grid size={{ xs: 12, md: 3 }}>
-        <SyledCard
-          sx={(theme) => ({
-            paddingLeft: 2,
-            minHeight: 280,
-            display: "flex",
-            justifyContent: "left",
-            alignItems: "left",
-            backgroundColor:
-              theme.palette.mode === "dark" ? "grey.900" : "grey.100",
-            color: theme.palette.mode === "dark" ? "white" : "black",
-          })}
-        >
-          <Box
-            sx={{
-              height: "100%",
-              pt: 2,
-              mb: 2,
-            }}
+            ))}
+          </SyledCard>
+          <MobileLayout
+            selectedItemIndex={selectedItemIndex}
+            handleItemClick={handleItemClick}
+            selectedFeature={selectedFeature}
+          />
+        </Grid>
+        <Grid size={{ xs: 12, md: 3 }}>
+          <SyledCard
+            sx={(theme) => ({
+              paddingLeft: 2,
+              minHeight: 770,
+              display: "flex",
+              justifyContent: "left",
+              alignItems: "left",
+              backgroundColor:
+                theme.palette.mode === "dark" ? "grey.900" : "grey.100",
+              color: theme.palette.mode === "dark" ? "white" : "black",
+            })}
           >
-            <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-              {selectedFeature.title}
-            </Typography>
-            {mode === "dark"
-              ? items[selectedItemIndex].textDark
-              : items[selectedItemIndex].textLight}
-            <Typography variant="body1" fontSize={18} lineHeight={1.8}>
-              <ul style={{ paddingLeft: "20px" }}>
-                <li>
-                  {mode === "dark"
-                    ? items[selectedItemIndex].textDark1
-                    : items[selectedItemIndex].textLight1}
-                </li>
-                <li>
-                  {mode === "dark"
-                    ? items[selectedItemIndex].textDark2
-                    : items[selectedItemIndex].textLight2}
-                </li>
-                <li>
-                  {mode === "dark"
-                    ? items[selectedItemIndex].textDark3
-                    : items[selectedItemIndex].textLight3}
-                </li>
-                <li>
-                  {mode === "dark"
-                    ? items[selectedItemIndex].textDark4
-                    : items[selectedItemIndex].textLight4}
-                </li>
-              </ul>
-            </Typography>
-          </Box>
-          <Box sx={{ px: 2, pb: 2 }}>
-            <Typography
-              gutterBottom
-              sx={{ color: "text.primary", fontWeight: "medium" }}
+            <Box
+              sx={{
+                height: "100%",
+                pt: 2,
+                mb: 2,
+              }}
             >
-              {selectedFeature.title}
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={{ color: "text.secondary", mb: 1.5 }}
-            >
-              {selectedFeature.description}
-            </Typography>
-          </Box>
-        </SyledCard>
+              <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+                {selectedFeature.title}
+              </Typography>
+              {mode === "dark"
+                ? items[selectedItemIndex].textDark
+                : items[selectedItemIndex].textLight}
+              <Typography variant="body1" fontSize={15} lineHeight={1.8}>
+                <ul style={{ paddingLeft: "20px" }}>
+                  <li>
+                    {mode === "dark"
+                      ? items[selectedItemIndex].textDark1
+                      : items[selectedItemIndex].textLight1}
+                  </li>
+                  <li>
+                    {mode === "dark"
+                      ? items[selectedItemIndex].textDark2
+                      : items[selectedItemIndex].textLight2}
+                  </li>
+                  <li>
+                    {mode === "dark"
+                      ? items[selectedItemIndex].textDark3
+                      : items[selectedItemIndex].textLight3}
+                  </li>
+                  <li>
+                    {mode === "dark"
+                      ? items[selectedItemIndex].textDark4
+                      : items[selectedItemIndex].textLight4}
+                  </li>
+                </ul>
+              </Typography>
+            </Box>
+            <Box sx={{ px: 2, pb: 2 }}>
+              <Typography
+                gutterBottom
+                sx={{ color: "text.primary", fontWeight: "medium" }}
+              >
+                {selectedFeature.title}
+              </Typography>
+              <Typography
+                variant="body2"
+                sx={{ color: "text.secondary", mb: 1.5 }}
+              >
+                {selectedFeature.description}
+              </Typography>
+            </Box>
+          </SyledCard>
+        </Grid>
       </Grid>
-    </Grid>
+    </Box>
   );
 }
