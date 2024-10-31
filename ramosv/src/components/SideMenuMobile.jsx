@@ -5,7 +5,7 @@ import Drawer, { drawerClasses } from "@mui/material/Drawer";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import MenuContent from "./MenuContent";
-import logo from "../assets/logo.png";
+import logo from "../assets/vr-logo.png";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 

@@ -77,8 +77,8 @@ const items = [
       "Collaborated with another engineer to meet tight project deadlines.",
     textDark3:
       "Collaborated with another engineer to meet tight project deadlines.",
-    textLight4: "",
-    textDark4: "",
+    textLight4: "Worked on both front-end and back-end development.",
+    textDark4: "Worked on both front-end and back-end development.",
   },
 ];
 
@@ -208,20 +208,34 @@ export default function HomePage() {
 
   return (
     <Grid container spacing={2} columns={12}>
-      <Grid size={{ xs: 12, md: 6 }}>
-        <SyledCard sx={{ height: "100%" }}>
+      <Grid size={{ xs: 12, md: 12 }}>
+        <Typography
+          component="h2"
+          variant="h4"
+          fontSize={27}
+          color="text.primary"
+          px={2}
+        >
+          About
+        </Typography>
+      </Grid>
+      <Grid size={{ xs: 12, md: 12 }}>
+        <SyledCard
+          sx={(theme) => ({
+            paddingLeft: 2,
+            minHeight: 280,
+            display: "flex",
+            justifyContent: "left",
+            alignItems: "left",
+            backgroundColor:
+              theme.palette.mode === "dark" ? "grey.900" : "grey.100",
+            color: theme.palette.mode === "dark" ? "white" : "black",
+          })}
+        >
           <SyledCardContent>
             <Typography
-              component="h2"
-              variant="h4"
-              gutterBottom
-              sx={{ color: "text.primary" }}
-            >
-              About
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ color: "text.secondary", mb: { xs: 2, sm: 4 } }}
+              variant="body"
+              sx={{ fontSize: 18, mb: { xs: 2, sm: 4 } }}
             >
               I'm a graduate student at the University of Colorado Denver,
               blending research and software development to drive advancement in
@@ -230,8 +244,8 @@ export default function HomePage() {
               solutions.
             </Typography>
             <Typography
-              variant="body1"
-              sx={{ color: "text.secondary", mb: { xs: 2, sm: 4 } }}
+              variant="body"
+              sx={{ fontSize: 18, mb: { xs: 2, sm: 4 } }}
             >
               As a Graduate Researcher, I conduct research in bioinformatics and
               healthcare, focusing on high-dimensional biomedical data. I
@@ -243,8 +257,8 @@ export default function HomePage() {
               applications.
             </Typography>
             <Typography
-              variant="body1"
-              sx={{ color: "text.secondary", mb: { xs: 2, sm: 4 } }}
+              variant="body"
+              sx={{ fontSize: 18, mb: { xs: 2, sm: 4 } }}
             >
               {" "}
               Additionally, I work as a Software Developer at Semantic Arts,
@@ -255,6 +269,17 @@ export default function HomePage() {
             </Typography>
           </SyledCardContent>
         </SyledCard>
+      </Grid>
+      <Grid size={{ xs: 12, md: 12 }}>
+        <Typography
+          component="h2"
+          variant="h4"
+          fontSize={27}
+          color="text.primary"
+          px={2}
+        >
+          Experience
+        </Typography>
       </Grid>
       <Grid size={{ xs: 12, md: 3 }}>
         <SyledCard sx={{ height: "100%" }}>
@@ -307,7 +332,7 @@ export default function HomePage() {
           selectedFeature={selectedFeature}
         />
       </Grid>
-      <Grid size={{ xs: 12, md: 3 }}>
+      <Grid size={{ xs: 12, md: 9 }}>
         <SyledCard
           sx={(theme) => ({
             paddingLeft: 2,
@@ -323,6 +348,7 @@ export default function HomePage() {
           <Box
             sx={{
               height: "100%",
+              width: "100%",
               pt: 2,
               mb: 2,
             }}

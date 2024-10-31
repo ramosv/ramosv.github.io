@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
+    "@formspree/react": "^2.5.1",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "@mui/x-charts": "latest",
