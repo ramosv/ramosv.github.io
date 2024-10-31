@@ -9,7 +9,7 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import SideMenuMobile from "./SideMenuMobile";
 import MenuButton from "./MenuButton";
 import Container from "@mui/material/Container";
-import logo from "../assets/logo.png";
+import logo from "../assets/vr-logo.png";
 import ColorModeIconDropdown from "../../theme/ColorModeIconDropdown";
 import { useColorScheme } from "@mui/material/styles";
 
@@ -24,7 +24,6 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   borderColor: theme.palette.divider,
   backgroundColor: alpha(theme.palette.background.default, 0.4),
   boxShadow: theme.shadows[1],
-  padding: "8px 12px",
 }));
 
 export default function AppNavbar({ setCurrentPage }) {
@@ -41,36 +40,61 @@ export default function AppNavbar({ setCurrentPage }) {
         boxShadow: 0,
         bgcolor: "transparent",
         backgroundImage: "none",
-        mt: 3,
+        mt: 2,
       }}
     >
       <Container>
         <StyledToolbar variant="dense">
-          <Box
-            sx={{ flexGrow: 1, display: "flex", alignItems: "center", px: 0 }}
-          >
+          <Box sx={{ display: "flex", alignItems: "center" }}>
             <CustomIcon />
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               <Button
                 variant="text"
-                color="Secondary"
-                size="small"
+                color="primary"
+                size="medium"
                 onClick={() => setCurrentPage("home")}
+                sx={{ marginLeft: 2 }}
               >
-                Home
+                Experience
               </Button>
               <Button
                 variant="text"
-                color="Secondary"
-                size="small"
+                color="primary"
+                size="medium"
                 onClick={() => setCurrentPage("experience")}
+                sx={{ marginLeft: 2 }}
               >
-                Experience
+                Projects
+              </Button>
+              <Button
+                variant="text"
+                color="primary"
+                size="medium"
+                sx={{ marginLeft: 2 }}
+                href="https://github.com/ramosv"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit my GitHub profile"
+              >
+                GitHub
+              </Button>
+              <Button
+                variant="text"
+                color="primary"
+                size="medium"
+                sx={{ marginLeft: 2 }}
+                href="https://www.linkedin.com/in/ramosv/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit my LinkedIn profile"
+              >
+                LinkedIn
               </Button>
             </Box>
           </Box>
           <Box spacing={2} sx={{ justifyContent: "center" }}>
             <ColorModeIconDropdown />
+            <spacing> </spacing>
             <MenuButton aria-label="menu" onClick={toggleDrawer(true)}>
               <MenuRoundedIcon />
             </MenuButton>
@@ -90,32 +114,14 @@ export function CustomIcon() {
   const { mode } = useColorScheme();
 
   return (
-    <Box
-      sx={{
-        height: 21,
-        width: 90,
-        mr: 1,
-        borderRadius: "999px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        alignSelf: "center",
-        color: "hsla(210, 100%, 95%, 0.9)",
-        border: "0px solid",
-        borderColor: mode === "dark" ? "white" : "black",
-        bgcolor: mode === "dark" ? "transparent" : "white",
-        boxShadow:
-          mode === "dark"
-            ? "inset 0 2px 5px rgba(0, 0, 0, 0.3)"
-            : "inset 0 2px 5px rgba(255, 255, 255, 0.3)",
-      }}
-    >
+    <Box sx={{ alignSelf: "flex-start" }}>
       <img
         src={logo}
         alt="custom icon"
         style={{
-          width: "4rem",
-          height: "3rem",
+          paddingTop: "12px",
+          width: "160px",
+          height: "80px",
           filter: mode === "dark" ? "invert(100%)" : "none",
         }}
       />
