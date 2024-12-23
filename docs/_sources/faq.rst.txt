@@ -103,7 +103,7 @@ For detailed guidelines, `BioNeuralNet README.md <https://github.com/UCD-BDLab/B
 
 ---
 
-**Q7: Where can I find BioNeuralNet’s documentation and examples?**
+**Q7: Where can I find BioNeuralNet's documentation and examples?**
 
 A7: You are already here! For additional questions, please reach out to us at **vicente.ramos@ucdenver.edu**.
 
