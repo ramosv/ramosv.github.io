@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; BioNeuralNet 0.1.0b1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=e4e59774"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tutorials" href="tutorials/index.html" />
+    <link rel="prev" title="Welcome to BioNeuralNet Beta 0.1" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            BioNeuralNet
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/index.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">User API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">BioNeuralNet</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h1>
+<p><strong>Requirements:</strong> Python 3.10 and 3.11 have been tested with this beta release.</p>
+<ol class="arabic">
+<li><p><strong>Python Installation via pip:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">bioneuralnet</span><span class="o">==</span><span class="m">0</span>.1.0b1
+</pre></div>
+</div>
+</li>
+<li><p><strong>Dependencies Installation with `fast-install.py`:</strong></p>
+<p>BioNeuralNet uses a variety of Python and R packages for data processing and graph generation.
+We have provided a quick way to install these dependencies using a script.</p>
+<p>Download options:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://github.com/UCD-BDLab/BioNeuralNet/archive/refs/heads/main.zip">Download zip content</a></p></li>
+<li><p>Clone or download from the <a class="reference external" href="https://github.com/UCD-BDLab/BioNeuralNet">BioNeuralNet GitHub repository</a></p></li>
+</ul>
+</div></blockquote>
+<figure class="align-center">
+<img alt="Repository Screenshot" src="_images/repo.png" />
+</figure>
+<p><strong>Continue from .zip download:</strong></p>
+<ul class="simple">
+<li><p>Extract the contents of the .zip file to a folder.
+- In the example below, the folder is named ‘tutorial’.</p></li>
+<li><p>Open a terminal window and navigate to the folder.</p></li>
+<li><p>Run the following command from the root directory:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>tutorial/BioNeuralNet-main
+python3<span class="w"> </span>scripts/fast-install.py
+</pre></div>
+</div>
+<figure class="align-center">
+<img alt="Terminal window during installation" src="_images/terminal.png" />
+</figure>
+<p><strong>fast-install.py Options:</strong></p>
+<p>The script offers a few options depending on your system and requirements:</p>
+<ul>
+<li><dl>
+<dt><strong>GPU-acceleration:</strong></dt><dd><ul>
+<li><p>BioNeuralNet supports GPU-accelerated training with CUDA.</p></li>
+<li><p>We support all stable CUDA versions (11.8, 12.1, 12.4) as detailed in the <a class="reference external" href="https://pytorch.org/get-started/locally/">PyTorch documentation</a>.</p></li>
+<li><p>First, check your installed CUDA version with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nvcc<span class="w"> </span>--version
+</pre></div>
+</div>
+</li>
+<li><p>Pass the version number when using the script:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>scripts/fast-install.py<span class="w"> </span>--cuda<span class="w"> </span>--cuda-version<span class="w"> </span><span class="m">12</span>.1
+</pre></div>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><strong>Development dependencies:</strong>
+- For testing, documentation, and contributing, you can install development dependencies:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>scripts/fast-install.py<span class="w"> </span>--dev
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Combined Installation:</strong>
+- Install both CUDA and development dependencies with:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>scripts/fast-install.py<span class="w"> </span>--cuda<span class="w"> </span>--cuda-version<span class="w"> </span><span class="m">11</span>.8<span class="w"> </span>--dev
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Command Examples:</strong></p>
+<ul>
+<li><p>Default Installation (CPU-only, no dev dependencies):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>fast-install.py
+</pre></div>
+</div>
+</li>
+<li><p>Install Development Dependencies:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>fast-install.py<span class="w"> </span>--dev
+</pre></div>
+</div>
+</li>
+<li><p>Install CUDA-enabled PyTorch (Default CUDA Version Detection):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>fast-install.py<span class="w"> </span>--cuda
+</pre></div>
+</div>
+</li>
+<li><p>Install Specific CUDA Version with Development Dependencies:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>fast-install.py<span class="w"> </span>--cuda<span class="w"> </span>--cuda-version<span class="w"> </span><span class="m">12</span>.1<span class="w"> </span>--dev
+</pre></div>
+</div>
+</li>
+<li><p>Install Both CUDA and Development Dependencies with a Supported CUDA Version:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>fast-install.py<span class="w"> </span>--cuda<span class="w"> </span>--cuda-version<span class="w"> </span><span class="m">11</span>.8<span class="w"> </span>--dev
+</pre></div>
+</div>
+</li>
+</ul>
+<p>If you cloned the repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/UCD-BDLab/BioNeuralNet.git
+<span class="nb">cd</span><span class="w"> </span>BioNeuralNet
+python3<span class="w"> </span>scripts/fast-install.py
+</pre></div>
+</div>
+<p><em>Follow the same steps as above.</em></p>
+</li>
+<li><p><strong>Success Message:</strong></p>
+<p>If you see the following message, the installation was successful:</p>
+<figure class="align-center">
+<img alt="Terminal window prompts" src="_images/terminal2.png" />
+</figure>
+<p>You can now activate your virtual environment and start using BioNeuralNet:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>./bioneuralnet-env/bin/activate
+</pre></div>
+</div>
+<p>See the <a class="reference internal" href="tutorials/index.html"><span class="doc">tutorials</span></a> or <a class="reference internal" href="tools/index.html"><span class="doc">tools</span></a> sections for examples.</p>
+</li>
+<li><p><strong>Running tests:</strong></p>
+<p>If you install development dependencies, you can run tests with the following command from the root directory:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest<span class="w"> </span>tests/
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>You should see the following output if installation was successful:</p></li>
+</ul>
+<figure class="align-center">
+<img alt="Pytest running tests" src="_images/tests.png" />
+</figure>
+<p>This script:
+- Creates and activates a virtual environment.
+- Installs base, development, and R dependencies for graph generation.</p>
+</li>
+</ol>
+<p>After installation, proceed to the <a class="reference internal" href="tutorials/index.html"><span class="doc">tutorials</span></a> or <a class="reference internal" href="tools/index.html"><span class="doc">tools</span></a> sections for code examples.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to BioNeuralNet Beta 0.1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tutorials/index.html" class="btn btn-neutral float-right" title="Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

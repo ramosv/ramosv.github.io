@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to BioNeuralNet Beta 0.1 &mdash; BioNeuralNet 0.1.0b1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=e4e59774"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            BioNeuralNet
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/index.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">User API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">BioNeuralNet</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to BioNeuralNet Beta 0.1</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-bioneuralnet-beta-0-1">
+<h1>Welcome to BioNeuralNet Beta 0.1<a class="headerlink" href="#welcome-to-bioneuralnet-beta-0-1" title="Link to this heading"></a></h1>
+<p><strong>Note:</strong> This is a <strong>beta version</strong> of BioNeuralNet. It is under active development, and certain features
+may be incomplete or subject to change. Feedback and bug reports are highly encouraged to help us
+improve the tool.</p>
+<p>BioNeuralNet is a Python-based software tool designed to streamline the transformation of multi-omics
+data into network-based representations and lower-dimensional embeddings, enabling advanced analytical
+processes like clustering, feature selection, disease prediction, and environmental exposure assessment.
+<strong>Python Installation via pip:</strong></p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">bioneuralnet</span><span class="o">==</span><span class="m">0</span>.1.0b1
+</pre></div>
+</div>
+</div></blockquote>
+<p>For installation details and other options, go to <a class="reference internal" href="installation.html"><span class="doc">Installation</span></a>.</p>
+<section id="example-transforming-multi-omics-for-enhanced-disease-prediction">
+<h2><strong>Example: Transforming Multi-Omics for Enhanced Disease Prediction</strong><a class="headerlink" href="#example-transforming-multi-omics-for-enhanced-disease-prediction" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id1">
+<img alt="BioNeuralNet Overview" src="_images/Overview.png" />
+<figcaption>
+<p><span class="caption-text"><strong>BioNeuralNet</strong>: Transforming Multi-Omics for Enhanced Disease Prediction</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>BioNeuralNet enables seamless integration of multi-omics data into a network-based analysis pipeline.
+Here is a quick example demonstrating how to generate a network representation using SmCCNet and apply it
+to disease prediction using DPMON:</p>
+<p><strong>Note</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>Data Preparation</strong>:</p>
+<ul class="simple">
+<li><p>Input your multi-omics data (e.g., proteomics, metabolomics, genomics) along with phenotype data.</p></li>
+</ul>
+</li>
+<li><p><strong>Network Construction</strong>:</p>
+<ul class="simple">
+<li><p>Use Sparse Multiple Canonical Correlation Network (SmCCNet) to generate a network from the omics data.</p></li>
+<li><p>This step constructs an adjacency matrix capturing correlations and interactions between features.</p></li>
+</ul>
+</li>
+<li><p><strong>Disease Prediction</strong>:</p>
+<ul class="simple">
+<li><p>Disease Prediction using Multi-Omics Networks (DPMON) uses Graph Neural Networks (GNNs) to predict disease phenotypes.</p></li>
+<li><p>Integrates multi-omics data and network structure information to generate GNNs embeddings that capture global and local graph patterns.</p></li>
+<li><p>It enhances the Omics-data by creating enriched with node features. These are processed through a Neural Network, optimized end-to-end, enhancing predictive accuracy and reducing overfitting.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Code Example</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">bioneuralnet.graph_generation</span> <span class="kn">import</span> <span class="n">SmCCNet</span>
+<span class="kn">from</span> <span class="nn">bioneuralnet.downstream_task</span> <span class="kn">import</span> <span class="n">DPMON</span>
+
+<span class="c1"># Step 1: Load Multi-Omics Dataset</span>
+<span class="n">omics_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;omics_data.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">phenotype_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;phenotype_data.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Step 2: Generate a network using SmCCNet</span>
+<span class="n">smccnet</span> <span class="o">=</span> <span class="n">SmCCNet</span><span class="p">(</span><span class="n">phenotype_data</span><span class="o">=</span><span class="n">phenotype_data</span><span class="p">,</span> <span class="n">omics_data</span><span class="o">=</span><span class="n">omics_data</span><span class="p">)</span>
+<span class="n">adjacency_matrix</span> <span class="o">=</span> <span class="n">smccnet</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Multi-Omics Network generated.&quot;</span><span class="p">)</span>
+
+<span class="c1"># Step 3: Enhanced disease prediction using network information with DPMON</span>
+<span class="n">dpmon</span> <span class="o">=</span> <span class="n">DPMON</span><span class="p">(</span><span class="n">adjacency_matrix</span><span class="o">=</span><span class="n">adjacency_matrix</span><span class="p">,</span> <span class="n">omics_list</span><span class="o">=</span><span class="p">[</span><span class="n">omics_data</span><span class="p">],</span> <span class="n">phenotype_data</span><span class="o">=</span><span class="n">phenotype_data</span><span class="p">)</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">dpmon</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Disease phenotype predictions:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">predictions</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Output</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Adjacency Matrix</strong>: The network representation of the multi-omics data.</p></li>
+<li><p><strong>Predictions</strong>: Disease phenotype predictions for each sample.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="bioneuralnet-overview">
+<h2><strong>BioNeuralNet Overview</strong><a class="headerlink" href="#bioneuralnet-overview" title="Link to this heading"></a></h2>
+<p>Looking to explore the capabilities of BioNeuralNet? Here is a brief overview of the key components:</p>
+<ol class="arabic simple">
+<li><p><strong>Graph Construction</strong>: Build multi-omics networks using methods like Weighted Gene Co-expression Network Analysis (<strong>WGCNA</strong>), Sparse Multiple Canonical Correlation Network (<strong>SmCCNet</strong>), or import existing networks.</p></li>
+<li><p><strong>Graph Clustering</strong>: Identify functional modules and communities using hierarchical clustering, PageRank, or Louvain clustering algorithms.</p></li>
+<li><p><strong>Network Embedding</strong>: Generate embeddings with <strong>Graph Neural Networks (GNNs)</strong> or <strong>Node2Vec</strong>, simplifying high-dimensional data into lower-dimensional representations.</p></li>
+<li><p><strong>Subject Representation</strong>: Integrate embeddings into omics data to enrich subject-level features, enhancing the dataset for downstream analyses.</p></li>
+<li><p><strong>Downstream Tasks</strong>: Perform advanced analyses like disease prediction using network information. Seamlessly integrate your own downstream tasks by leveraging existing components.</p></li>
+</ol>
+<figure class="align-center" id="id2">
+<img alt="BioNeuralNet Overview" src="_images/Overview.png" />
+<figcaption>
+<p><span class="caption-text">BioNeuralNet Overview</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Subject Representation</strong></p>
+<figure class="align-center" id="id3">
+<img alt="Subject Representation Workflow" src="_images/SubjectRepresentation.png" />
+<figcaption>
+<p><span class="caption-text">Subject-level embeddings provide richer phenotypic and clinical context.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Disease Prediction</strong></p>
+<figure class="align-center" id="id4">
+<img alt="Disease Prediction (DPMON)" src="_images/DPMON.png" />
+<figcaption>
+<p><span class="caption-text">Embedding-enhanced subject data support models like DPMON for improved disease prediction.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="documentation-overview">
+<h2>Documentation Overview<a class="headerlink" href="#documentation-overview" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/example_1.html">Example 1: Sparse Multiple Canonical Correlation Network (SmCCNet) Workflow with Graph Neural Network (GNN) Embeddings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/example_2.html">Example 2: Weighted Gene Co-expression Network Analysis (WGCNA) Workflow with Graph Neural Network (GNN) Embeddings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/example_3.html">Example 3: Disease Prediction Using Graph Information (SmCCNet + DPMON)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/example_4.html">Example 4: Sparse Multiple Canonical Correlation Network (SmCCNet) + PageRank Clustering + Visualization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tools/index.html">Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tools/Graph_Construction.html">Graph Construction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/Graph_Clustering.html">Graph Clustering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/Graph_Embedding.html">Graph Embedding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/Subject_Representation.html">Subject Representation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/Disease_Prediction.html">Disease Prediction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/Analysis_and_Visualization.html">Analysis and Visualization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_api.html">User API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/bioneuralnet.graph_generation.html">bioneuralnet.graph_generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/bioneuralnet.network_embedding.html">bioneuralnet.network_embedding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/bioneuralnet.downstream_task.html">bioneuralnet.downstream_task</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/bioneuralnet.analysis.html">bioneuralnet.analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_autosummary/bioneuralnet.utils.html">bioneuralnet.utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_api.html#executables">Executables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
